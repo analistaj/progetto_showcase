@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('ristrutturazione', function () {
+	return view('ristrutturazione');
+});
+
+Route::get('progettazione', function () {
+	return view('progettazione');
+});
+
+Route::get('risparmio_energetico', function () {
+	return view('risparmio_energetico');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

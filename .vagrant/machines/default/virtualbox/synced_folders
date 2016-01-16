@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/progetto-showcase":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/progetto-showcase","hostpath":"C:/Documents/GitHub/progetto_showcase","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Documents/GitHub/progetto_showcase","disabled":false}}}
