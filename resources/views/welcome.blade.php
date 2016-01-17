@@ -6,7 +6,9 @@
      <meta name = "format-detection" content = "telephone=no" />
      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
      <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/font-awesome.css">   
+     <link rel="stylesheet" href="css/font-awesome.css">
+        <!-- la riga seguente è lo script per font awesome -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">   
      <link rel="stylesheet" href="css/owl.carousel.css" > 
      <script src="js/jquery.js"></script>    
      <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -90,7 +92,7 @@
      </head>
 <body id="top">
 
-<!--==============================header=================================-->
+<!--============================== HEADER =================================-->
 
 <header id="header">
     <div class="top_border">
@@ -102,7 +104,7 @@
                 <div class="grid_4">
                     <div class="search_box">
                         <form id="search" action="search.php" method="GET">
-                            <input type="text" name="s" value="Search" onFocus="if (this.value == 'Search') {this.value=''}" onBlur="if (this.value == '') {this.value='Search'}">
+                            <input type="text" name="s" value="Search" onfocus="if (this.value == 'Search') {this.value=''}" onBlur="if (this.value == '') {this.value='Search'}">
                             <a onClick="document.getElementById('search').submit()"><img src="images/search_btn.png" alt="search"></a>
                             <div class="clear"></div>      
                         </form>
@@ -110,9 +112,15 @@
                 </div>
                 <div class="grid_4">
                     <div class="tel">contatto rapido
-                        <div class="phone"><i class="fa fa-phone"></i>+39 000 000 0000</div>
-                        <span>&nbsp;</span>
-                        <a href="#"><i class="fa fa-envelope-o"></i>info@studiob</a>
+                       <div class="phone">
+                          <i class="fa fa-phone"></i>
+                           +39 000 000 0000
+                       </div>
+                       <span>&nbsp;</span>
+                       <a href="#"><i class="fa fa-envelope-o">
+                        </i>
+                        info@studiob
+                        </a>
                     </div>
                     <ul class="socials">
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -130,33 +138,37 @@
             <div class="row">
                 <div class="grid_9">
                     <nav>
-                        <ul class="sf-menu">
-                            <li class="current"><a href="index.html">Chi siamo</a></li>
-                            <li><a href="index-1.html">I nostri servizi</a></li>
-                            <li><a href="index-2.html">I progetti</a>
-                                <ul>
-                                    <li><a href="#">Sottomenù</a></li>
-                                    <li><a href="#">Sottomenù 0</a>
-                                        <ul>
-                                            <li><a href="#">Sottomenù 1</a></li>
-                                            <li><a href="#">Sottomenù 2</a></li>
-                                            <li><a href="#">Sottomenù 3</a></li>
+                        <ul class="sf-menu sf-js-enabled sf-arrows">
+                            <li class="current">
+                              <a href="index.html">CHI SIAMO</a>
+                            </li>
+                            <li><a href="index-1.html">I NOSTRI SERVIZI</a>
+                            </li>
+                            <li class>
+                            <a href="index-2.html" class="sf-with-ul">PROGETTI</a>
+                                <ul style="display: none;">
+                                    <li><a href="#">Vestibulum iaculis</a></li>
+                                    <li><a href="#" class="sf-with-ul">Fusce euismod conuat</a>
+                                        <ul style="display: none;">
+                                            <li><a href="#">Pellentesque sed</a></li>
+                                            <li><a href="#">Aliquam congue ferm</a></li>
+                                            <li><a href="#">Mauris accum</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Contatti</a></li>
+                                    <li><a href="#">Pellentesque</a></li>
                                </ul>
                             </li>
-                            <li><a href="index-3.html">Recent projects</a></li>
-                            <li><a href="index-4.html">Our contacts</a></li>
-                            <li><a href="index-5.html">Blog</a></li>
+                            <li><a href="index-3.html">PROGETTI RECENTI</a></li>
+                            <li><a href="index-4.html">CONTATTI</a></li>
+                            <li><a href="index-5.html">BLOG</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="grid_3">
                     <ul class="top_links">
                         <li><a href="#">login</a></li>
-                        <li><a href="#">help</a></li>
-                        <li><a href="#">newsletter signup</a></li>
+                        <li><a href="#">aiuto</a></li>
+                        <li><a href="#">iscriviti alla newsletter</a></li>
                     </ul>
                 </div>
             </div>           
@@ -169,20 +181,20 @@
 <div id="content">
     <div class="banner">
         <div class="container">
-            <div class="row">     
+            <div class="row">    
                 <div class="grid_12">
                     <div class="caption">
-                        <h2>Benvenuto</h2>
+                        <h2>Benvenuto!</h2>
                         <p>Studio B is the leading industrial company providing capabilities to effectively execute major industrial projects throughout a diversified marketplace, while maintaining a competitive structure regionally across the area.</p>
                         <a href="#" class="link">chi siamo</a>
                     </div>       
-                </div>
-            </div>
+                </div>    
+            </div>  
         </div>
     </div>
     <div class="caption2">
         <div class="container">
-            <div class="row">     
+            <div class="row">    
                 <div class="grid_12">
                     <i class="fa fa-bullhorn"></i>
                     <p>Le novità del settore, direttamente dal nostro blog</p>
@@ -193,7 +205,7 @@
     </div>
 <div class="bg1 p95">
     <div class="container">
-        <div class="row">     
+        <div class="row">   
             <div class="grid_12">
                 <div class="intro">
                     <h2>Soluzioni ingegneristiche<br>per l'abitare</h2>
@@ -206,96 +218,59 @@
         </div>
     </div>
 </div>
-<div class="banner1">
-    <div class="p83">
-        <div class="container">
+         <div class="banner1">
+          <div class="p83">
+           <div class="container">
             <div class="row">     
                 <div class="grid_12 center">
-                <h2 class="col7">Progetti recenti</h2>
-                <div id="owl-1" class="owl-carousel">
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img1.jpg" alt="">
-                            <div><a href="#">Quisque nulla Vestibulum</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img2.jpg" alt="">
-                            <div><a href="#">scelerisque eget</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img3.jpg" alt="">
-                            <div><a href="#">primis in faucibus orci lu</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img1.jpg" alt="">
-                            <div><a href="#">Quisque nulla Vestibulum</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img2.jpg" alt="">
-                            <div><a href="#">scelerisque eget</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img3.jpg" alt="">
-                            <div><a href="#">primis in faucibus orci lu</a></div>
-                        </div>
-                    </div> 
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img1.jpg" alt="">
-                            <div><a href="#">Quisque nulla Vestibulum</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img2.jpg" alt="">
-                            <div><a href="#">scelerisque eget</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img3.jpg" alt="">
-                            <div><a href="#">primis in faucibus orci lu</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img1.jpg" alt="">
-                            <div><a href="#">Quisque nulla Vestibulum</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img2.jpg" alt="">
-                            <div><a href="#">scelerisque eget</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb1">
-                            <img src="images/page1_img3.jpg" alt="">
-                            <div><a href="#">primis in faucibus orci lu</a></div>
-                        </div>
-                    </div>                                                                                                                  
-                </div>                              
-                </div>                              
+                  <h2 class="col7">Progetti recenti</h2>
+                   <div id="owl-1" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                     <div class="owl-wrapper-outer">
+                       
+                       <div class="owl-wrapper" style="width: 7512px; left: 0px; display: block; transform: translate3d(0px, 0px, 0px);">   
+                         
+                         <div class="owl-item" style="width: 313px;"> 
+                           <div class="item">
+                             <div class="thumb1">
+                               <img src="images/page1_img1.jpg" alt="">
+                                <div><a href="#">Quisque nulla Vestibulum</a></div>
+                             </div>
+                            </div>
+                           </div>
+                          
+	                    <div class="owl-item" style="width: 313px;">
+	                       <div class="item">
+	                        <div class="thumb1">
+	                            <img src="images/page1_img2.jpg" alt="">
+	                            <div><a href="#">scelerisque eget</a></div>
+	                        </div>
+	                       </div>
+	                     </div>
+	                     
+	                    <div class="owl-item" style="width: 313px;">
+	                     <div class="item">
+	                       <div class="thumb1">
+	                         <img src="images/page1_img3.jpg" alt="">
+	                         <div><a href="#">primis in faucibus orci lu</a></div>
+	                       </div>
+	                      </div>                                                                                                                  
+                        </div>   
+                                                   
+                  </div>                              
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
             </div>
+         </div>
         </div>
-    </div>
-</div>
+        
 <div class="bg1 p95">
     <div class="container">
         <div class="row">
             <div class="grid_4">
-                <h3>Cosa facciamo</h3>
+                <h3>What we do</h3>
                     <dl class="accordion">
                         <dt><a href="#"><span>quid pro quo hic escorol</span><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i></a></dt>
                         <dd>
@@ -392,7 +367,8 @@
     </div>
 </div>
     <div class="map">
-        <iframe class="wide_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
+        <!-- MAPPA TEMPLATE ORIGINALE <iframe class="wide_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe> -->
+        <iframe class="wide_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45768.77311699167!2d12.360986571756305!3d44.19577215102518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sit!4v1452969502372" style="border:0"></iframe>
     </div>
 <div class="bg2 p21">
     <div class="container">
