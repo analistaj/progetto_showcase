@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
      <head>
-     <title>Studio B - Ingegneria civile</title>
+     <title>Studio B - @yield('title')</title>
      <meta charset="utf-8">
      <meta name = "format-detection" content = "telephone=no" />
      <link rel="icon" href="images/square_shape.png">
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/font-awesome.css">
-        <!-- la riga seguente è lo script per font awesome -->
+        <!-- la riga seguente � lo script per font awesome -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">   
+     <link rel="stylesheet" href="css/form.css">
      <link rel="stylesheet" href="css/owl.carousel.css" > 
      <script src="js/jquery.js"></script>    
      <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -21,6 +22,8 @@
      <script src="js/superfish.js"></script>
      <script src="js/jquery.mobilemenu.js"></script>    
      <script src="js/sForm.js"></script>
+     <script src="js/TMForm.js"></script>
+     
      <!--[if lt IE 8]>
         <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
         <link href='//fonts.googleapis.com/css?family=Asap:400' rel='stylesheet' type='text/css'>
@@ -92,14 +95,18 @@
      </head>
 <body id="top">
 
+
 <!--============================== HEADER =================================-->
 
 <header id="header">
+
+@section('header')
+
     <div class="top_border">
         <div class="container">
             <div class="row">
                 <div class="grid_4">
-                    <h1><a href="index.html"><img src="images/logo.png" alt="logo Studio B"></a></h1>
+                    <h1><a href="/"><img src="images/logo.png" alt="logo Studio B"></a></h1>
                 </div>
                 <div class="grid_4">
                     <div class="search_box">
@@ -174,246 +181,21 @@
     </div>
 </header>
 
-<!--================================ CONTENT ================================-->
 
-<div id="content">
-    <div class="banner">
-        <div class="container">
-            <div class="row">    
-                <div class="grid_12">
-                    <div class="caption">
-                        <h2>STUDIO B</h2>
-                        <p>Studio B is the leading industrial company providing capabilities to effectively execute major industrial projects throughout a diversified marketplace, while maintaining a competitive structure regionally across the area.</p>
-                        <a href="#" class="link">chi siamo</a>
-                    </div>       
-                </div>    
-            </div>  
-        </div>
-    </div>
-    <div class="caption2">
-        <div class="container">
-            <div class="row">    
-                <div class="grid_12">
-                    <i class="fa fa-bullhorn"></i>
-                    <p>Le novità del settore, direttamente dal nostro blog</p>
-                    <a href="#">approfondisci<i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-<div class="bg1 p95">
-    <div class="container">
-        <div class="row">   
-            <div class="grid_12">
-                <div class="intro">
-                    <h2>Soluzioni ingegneristiche<br>per l'abitare</h2>
-                    <h4>L'innovazione ingegneristica è alla base del vivere. We provide innovative and cost-effective industrial solutions. We build appliances, lighting, power systems and other products that help millions of homes, offices, factories and retail facilities around the world work better.</h4>
-                    <div>
-                        <a href="#" class="link">leggi tutto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-       <div class="banner1">
-         <div class="p83">
-           <div class="container">
-             <div class="row">     
-                
-                <div class="grid_12 center">
-                  <h2 class="col7">Progetti recenti</h2>
-                    <div id="owl-1" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                      <div class="owl-wrapper-outer">
-                        <div class="owl-wrapper" style="width: 9360px; left: 0px; display: block;">
-	                          
-    <!-- ============== Tre img con animazione centrale  -->
-    
-	                          <div class="owl-item" style="width: 390px;">
-		                       <div class="item">
-		                         <div class="thumb1">
-		                           <img src="images/page1_img1.jpg" alt="">
-		                           <div>
-		                             <a href="#">Quisque nulla Vestibulum</a>
-		                           </div>
-		                         </div>
-		                        </div>
-		                       </div>
-		                       
-		                       <div class="owl-item" style="width: 390px;">
-		                       <div class="item">
-		                         <div class="thumb1">
-		                           <img src="images/page1_img1.jpg" alt="">
-		                           <div>
-		                             <a href="#">Quisque nulla Vestibulum</a>
-		                           </div>
-		                         </div>
-		                        </div>
-		                       </div>
-		                       
-		                       <div class="owl-item" style="width: 390px;">
-		                       <div class="item">
-		                         <div class="thumb1">
-		                           <img src="images/page1_img1.jpg" alt="">
-		                           <div>
-		                             <a href="#">Quisque nulla Vestibulum</a>
-		                           </div>
-		                         </div>
-		                        </div>
-		                       </div>
-		                       
-     <!-- =================ALTRE IMG
-                       
-                    <div class="owl-item" style="width: 390px;">
-                      <div class="item">
-                        <div class="thumb1">
-                                 <img src="images/page1_img3.jpg" alt="">
-	                            <div>
-	                             <a href="#">primis in faucibus orci lu</a>
-	                            </div>
-                        </div>
-                       </div>
-                      </div> 
-            ==================================================== -->
-                  
-                  
-                </div>
-              </div>
-              
-		              <div class="owl-controls clickable">
-		                <div class="owl-pagination">
-			              <div class="owl-page active">
-			                 <span class=""></span>
-			              </div>
-			              <div class="owl-page">
-			                 <span class=""></span>
-			              </div>
-			              <div class="owl-page">
-			                 <span class=""></span>
-			              </div>
-			              <div class="owl-page">
-			                <span class=""></span>
-			              </div>
-		                 </div>
-                        </div>
-             </div>                              
-            </div>
-           </div>
-          </div>
-         </div>
-        </div>
-        
-        
-<div class="bg1 p95">
-    <div class="container">
-        <div class="row">
-            <div class="grid_4">
-                <h3>What we do</h3>
-                    <dl class="accordion">
-                        <dt><a href="#"><span>quid pro quo hic escorol</span><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i></a></dt>
-                        <dd>
-                            <p>Epsum factorial non t quid pro quo hic escorol. Olypian quarrels et gorilngolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unuacto lingo est igpay atinlay. Marquee selectus non provisio incongruous.</p>
-                        </dd>
-                        <dt><a href="#"><span>escorol Olypian puarrels et</span><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i></a></dt>
-                        <dd>
-                            <p>Epsum factorial non t quid pro quo hic escorol. Olypian quarrels et gorilngolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unuacto lingo est igpay atinlay. Marquee selectus non provisio incongruous.</p>
-                        </dd>
-                        <dt><a href="#"><span>souvlaki ignitus carborundum</span><i class="fa fa-plus-square"></i><i class="fa fa-minus-square"></i></a></dt>
-                        <dd>
-                            <p>Epsum factorial non t quid pro quo hic escorol. Olypian quarrels et gorilngolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unuacto lingo est igpay atinlay. Marquee selectus non provisio incongruous.</p>
-                        </dd>                                         
-                    </dl>
-            </div>
-            <div class="grid_4 wrap">
-                <h3>I nostri plus</h3>
-                <p class="lh21">Gratuitous octopus niacodiumtimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glolava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee ctus non prio incongruous feline nolo contendre Olypian rels et gongolium sic ad nauseum. Souvlaki ignitus carborundum.</p>
-                <ul class="list">
-                    <li><a href="#"><i class="fa fa-check"></i>Energy</a></li>
-                    <li><a href="#"><i class="fa fa-check"></i>Healthcare</a></li>
-                    <li><a href="#"><i class="fa fa-check"></i>Industry</a></li>
-                    <li><a href="#"><i class="fa fa-check"></i>Infrastructure &&; Cities</a></li>
-                </ul>
-            </div>
-            <div class="grid_4">
-                <h3>Dicono di noi</h3>
-                    <blockquote>
-                        <div class="bq_top">
-                            <img src="images/quote.png" alt="">
-                            <p>La nostra azienda si avvale della professionalità di Studio B dal 2004. Sic tempus fugit esperanto hicp estrogen. Glolava ex librus hup hey ad condominiacile et geranium incognito. Epsum factorial non.</p>
-                        </div>
-                        <div class="bq_bot">
-                            <img src="images/page1_img4.png" alt=""> 
-                            <a href="#">Fabio Rossi</a><br>
-                            <span>CEO ABC srl - Ravenna</span>
-                        </div>
-                    </blockquote>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="bg4">
-    <div class="p100">
-        <div class="container">
-            <div class="row">     
-                <div class="grid_4 wrap">
-                    <div class="thumb">
-                        <div class="circle"><img src="images/page1_ico1.png" alt=""></div>
-                        <h5><a href="#" class="link1">Ristrutturazione<br>edilizia</a></h5>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab ilventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
-                        <a href="#" class="link2">continua</a>
-                    </div>
-                </div>
-                <div class="grid_4 wrap">
-                    <div class="thumb">
-                        <div class="circle"><img src="images/page1_ico2.png" alt=""></div>
-                        <h5><a href="#" class="link1">Progettazione<br>e calcolo strutturale</a></h5>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab ilventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
-                        <a href="#" class="link2">continua</a>
-                    </div>
-                </div>
-                <div class="grid_4">
-                    <div class="thumb">
-                        <div class="circle"><img src="images/page1_ico3.png" alt=""></div>
-                        <h5><a href="#" class="link1">Risparmio<br>energetico</a></h5>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab ilventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
-                        <a href="#" class="link2">continua</a>
-                    </div>
-                </div>                                
-            </div>
-        </div>
-    </div>
-</div>
-<div class="bg3">
-    <div class="container">
-        <div class="row">
-            <div class="grid_12">
-                <div id="owl" class="owl-carousel">
-                    <div class="item"><a href="#"><img src="images/page1_logo1.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo2.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo3.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo4.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo5.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo6.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo7.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo8.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo9.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo1.jpg" alt=""></a></div>
-                    <div class="item"><a href="#"><img src="images/page1_logo2.jpg" alt=""></a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="map">
-        <!-- MAPPA TEMPLATE ORIGINALE <iframe class="wide_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe> -->
-        <iframe class="wide_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45768.77311699167!2d12.360986571756305!3d44.19577215102518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sit!4v1452969502372" style="border:0"></iframe>
-    </div>
-    
-    
-    
-    
+
+<!-- ============= CONTENUTO SINGOLE PAGINE ================== -->
+
+
+@yield('content')
+
+
+
+
+
+
+
+
 <!-- ========== MENU SOPRA FOOTER   ============ -->
-
 
 <div class="bg2 p21">
     <div class="container">
@@ -481,13 +263,14 @@
                     <span class="tr">&copy;</span>
                     <span id="copyright-year"></span>
                     <span>Studio B. Ingegneria edile.</span><br>
-                    <a href="index-6.html">Politiche sulla Privacy</a>
+                    <a href="index-6.html">Privacy</a>
                 </div>
             </div>  
         </div>
     </div>
 </div>            
-</div>            
+</div>  
+
 
 <!--==================  FOOTER   =======================-->
 

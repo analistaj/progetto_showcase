@@ -15,16 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('ristrutturazione', function () {
-	return view('ristrutturazione');
+Route::get('chisiamo', function () {
+	return view('pages.chisiamo');
 });
 
-Route::get('progettazione', function () {
-	return view('progettazione');
+Route::get('servizi', function () {
+	return view('pages.servizi');
 });
 
-Route::get('risparmio_energetico', function () {
-	return view('risparmio_energetico');
+Route::get('progetti', function () {
+	return view('pages.progetti');
+});
+
+Route::get('contatti', function () {
+	return view('pages.contatti');
 });
 
 /*

@@ -11,3 +11,20 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+{
+	 
+	function chisiamo()
+	{
+		return view('pages.chisiamo');
+	}
+	function progetti()
+	{
+		return view('pages.progetti');
+	}
+	 
+	function servizi()
+	{
+		return view('pages.servizi');
+	}
+}
