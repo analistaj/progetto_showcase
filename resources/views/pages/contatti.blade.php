@@ -23,7 +23,7 @@ servizi
                     <dd><span>Freephone: </span>+1 800 559 6580</dd>
                     <dd><span>Telephone:</span> +1 800 603 6035</dd>
                     <dd><span>FAX:</span> +1 800 889 9898</dd>
-                    <dd><span>E-mail:&nbsp;</span><a href="#">mail@demolink.org</a></dd>
+                    <dd><span>E-mail:&nbsp;</span><a href="#">info@studiob.net</a></dd>
                     </dl>
                 </address>
                 <address class="address1">
@@ -33,7 +33,7 @@ servizi
                     <dd><span>Freephone: </span>+1 800 559 6580</dd>
                     <dd><span>Telephone:</span> +1 800 603 6035</dd>
                     <dd><span>FAX:</span> +1 800 889 9898</dd>
-                    <dd><span>E-mail:&nbsp;</span><a href="#">mail@demolink.org</a></dd>
+                    <dd><span>E-mail:&nbsp;</span><a href="#">info@studiob.net</a></dd>
                     </dl>
                 </address>                                         
             </div>              
@@ -60,12 +60,12 @@ servizi
                   </label>                  
                   <label class="email">
                        <input type="text" placeholder="E-mail" data-constraints="@Required @Email" />
-                       <span class="empty-message">*This field is required.</span>
+                       <span class="empty-message">*Questo campo è richiesto.</span>
                        <span class="error-message">*This is not a valid email.</span>
                   </label>
                   <label class="phone">
                        <input type="text" placeholder="Phone" data-constraints="@Required @JustNumbers"/>
-                       <span class="empty-message">*This field is required.</span>
+                       <span class="empty-message">*Questo campo è richiesto.</span>
                        <span class="error-message">*This is not a valid phone.</span>
                   </label>
               </div>

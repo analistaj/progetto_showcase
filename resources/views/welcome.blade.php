@@ -166,7 +166,7 @@
                     <ul class="top_links">
                         <li><a href="#">login</a></li>
                         <li><a href="#">aiuto</a></li>
-                        <li><a href="#">iscriviti alla newsletter</a></li>
+                        <li><a href="#">newsletter</a></li>
                     </ul>
                 </div>
             </div>           
